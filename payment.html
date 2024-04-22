@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Fusion - Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Film Fusion</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">All Movies</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="seat.html">SeatBook</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="payment">
+            <h2>Payment</h2>
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <p>Movie Title</p>
+                <p>Date and Time</p>
+                <p>Selected Seats: <span class="seat-count">0</span></p>
+                <p>Total: <span class="total-price">$0</span></p>
+            </div>
+            <div class="payment-methods">
+                <h3>Payment Methods</h3>
+                <div class="payment-option">
+                    <input type="radio" id="dana" name="payment-method" value="dana">
+                    <label for="dana">
+                        <img src="image/dana-meta-logo.png" alt="Dana">
+                        <span>Dana</span>
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="ovo" name="payment-method" value="ovo">
+                    <label for="ovo">
+                        <img src="image/ovo.png" alt="OVO">
+                        <span>OVO</span>
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="bca" name="payment-method" value="bca">
+                    <label for="bca">
+                        <img src="image/bca.png" alt="BCA">
+                        <span>BCA</span>
+                    </label>
+                </div>
+            </div>
+            <button class="pay-btn">Pay Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Film Fusion. All rights reserved.</p>
+    </footer>
+
+    <script src="payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Fusion - Seat Book</title>
+    <link rel="stylesheet" href="seat.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Film Fusion</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">All Movies</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="payment.html">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seatbook">
+            <h2>Select Your Seats</h2>
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <p>Date and Time</p>
+            </div>
+            <div class="screen">SCREEN</div>
+            <ul class="seat-rows"></ul>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="seat available"></div>
+                    <span>Available</span>
+                </div>
+                <div class="legend-item">
+                    <div class="seat selected"></div>
+                    <span>Selected</span>
+                </div>
+                <div class="legend-item">
+                    <div class="seat occupied"></div>
+                    <span>Occupied</span>
+                </div>
+            </div>
+            <div class="filter">
+                <label for="filter-seats">Filter:</label>
+                <select id="filter-seats">
+                    <option value="all">All</option>
+                    <option value="available">Available</option>
+                    <option value="occupied">Occupied</option>
+                </select>
+            </div>
+            <div class="selected-seats">
+                <p>Selected Seats: <span class="count">0</span></p>
+                <p>Total: <span class="total">$0</span></p>
+            </div>
+            <button class="book-btn"><a href="payment.html">Book Now</a></button>
+            <div class="seat-preview">
+                <h3>Seat Preview</h3>
+                <div class="preview-container">
+                    <!-- Tambahkan box kecil di sini -->
+                    <div class="small-box">Preview Seat</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Film Fusion. All rights reserved.</p>
+    </footer>
+
+    <script src="seat.js"></script>
+</body>
+</html>
